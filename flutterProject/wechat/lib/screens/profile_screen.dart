@@ -8,12 +8,13 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_sign_in/google_sign_in.dart';
+import 'package:image_picker/image_picker.dart';
 import 'package:wechat/api/api.dart';
 import 'package:wechat/helper/dialogs.dart';
 import 'package:wechat/main.dart';
 import 'package:wechat/models/chat_user.dart';
 import 'package:wechat/screens/auth/login_screen.dart';
-
+  
 class ProfileScreen extends StatefulWidget {
   final ChatUser user;
 

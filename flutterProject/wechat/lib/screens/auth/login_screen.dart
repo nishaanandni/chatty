@@ -8,7 +8,6 @@ import 'package:wechat/main.dart';
 import 'package:wechat/screens/home_screen.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
-
 //login screen -- implements google sign in or sign up feature for app
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
