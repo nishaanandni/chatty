@@ -4,6 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:wechat/main.dart';
 import 'package:wechat/models/chat_user.dart';
+import 'package:wechat/screens/view_profile_screen.dart';
 
 class ProfileDialog extends StatelessWidget {
   const ProfileDialog({super.key, required this.user});

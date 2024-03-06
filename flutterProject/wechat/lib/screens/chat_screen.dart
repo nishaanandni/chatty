@@ -12,6 +12,7 @@ import 'package:wechat/helper/my_date_util.dart';
 import 'package:wechat/main.dart';
 import 'package:wechat/models/chat_user.dart';
 import 'package:wechat/models/message.dart';
+import 'package:wechat/screens/view_profile_screen.dart';
 import 'package:wechat/widgets/message_card.dart';
 
 class ChatScreen extends StatefulWidget {
@@ -119,11 +120,11 @@ class _ChatScreenState extends State<ChatScreen> {
                     height: mq.height * .35,
                     child: EmojiPicker(
                       textEditingController: _textController,
-                      config: Config(
-                        bgColor: const Color.fromARGB(255, 234, 248, 255),
-                        columns: 8,
-                        emojiSizeMax: 32 * (Platform.isIOS ? 1.30 : 1.0),
-                      ),
+                      // config: Config(
+                        // bgColor: const Color.fromARGB(255, 234, 248, 255),
+                        // columns: 8,
+                        // emojiSizeMax: 32 * (Platform.isIOS ? 1.30 : 1.0),
+                      // ),
                     ),
                   )
               ],
