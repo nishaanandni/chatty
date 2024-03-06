@@ -3,7 +3,7 @@ import 'dart:developer';
 import 'dart:io';
 
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:emoji_picker_flutter/emoji_picker_flutter.dart';
+//import 'package:emoji_picker_flutter/emoji_picker_flutter.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
@@ -118,14 +118,14 @@ class _ChatScreenState extends State<ChatScreen> {
                 if (_showEmoji)
                   SizedBox(
                     height: mq.height * .35,
-                    child: EmojiPicker(
-                      textEditingController: _textController,
-                      // config: Config(
-                      //   bgColor: const Color.fromARGB(255, 234, 248, 255),
-                      //   columns: 8,
-                      //   emojiSizeMax: 32 * (Platform.isIOS ? 1.30 : 1.0),
-                      // ),
-                    ),
+                    // child: EmojiPicker(
+                    //   textEditingController: _textController,
+                    //   // config: Config(
+                    //   //   bgColor: const Color.fromARGB(255, 234, 248, 255),
+                    //   //   columns: 8,
+                    //   //   emojiSizeMax: 32 * (Platform.isIOS ? 1.30 : 1.0),
+                    //   // ),
+                    // ),
                   )
               ],
             ),
