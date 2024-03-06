@@ -1,11 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:wechat/screens/auth/login_screen.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/services.dart';
+import 'package:wechat/screens/splash_screen.dart';
+import 'firebase_options.dart';
 
 //global object for accessing device screen size
 late Size mq;
 
 void main() {
-  runApp(const MyApp());
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
+  SystemChrome.setPreferredOrientations(
+    [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown])
+    .then((value){
+      _initializeFirebase();
+      runApp(const MyApp());
+    });
 }
 
 class MyApp extends StatelessWidget {
@@ -27,6 +37,12 @@ class MyApp extends StatelessWidget {
         backgroundColor: Color.fromARGB(255, 200, 230, 201),)
         ),
      
-      home: const LoginScreen());
+      home: const SplashScreen());
  }
+}
+
+_initializeFirebase() async{
+await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+);
 }
