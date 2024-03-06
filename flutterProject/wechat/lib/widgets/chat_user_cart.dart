@@ -6,6 +6,8 @@ import 'package:wechat/helper/my_date_util.dart';
 import 'package:wechat/main.dart';
 import 'package:wechat/models/chat_user.dart';
 import 'package:wechat/models/message.dart';
+import 'package:wechat/screens/chat_screen.dart';
+import 'package:wechat/widgets/dialogs/profile_dialog.dart';
 
 //card to represent a single user in home screen
 class ChatUserCard extends StatefulWidget {
